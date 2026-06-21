@@ -1555,7 +1555,7 @@
 
   // Calls your Cloudflare Worker, which holds the Gemini API key server-side.
   // Set this to your real Worker URL after deploying it.
-  const AI_PROXY_URL = 'https://YOUR-WORKER-NAME.YOUR-SUBDOMAIN.workers.dev';
+  const AI_PROXY_URL = 'https://kiwiai-gemini-proxy.timofeifj.workers.dev/';
 
   async function callAI(systemPrompt, userMessage) {
     const response = await fetch(AI_PROXY_URL, {
